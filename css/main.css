@@ -1,0 +1,34 @@
+:root {
+  --main: #46474E;
+}
+
+::-moz-selection {
+  background: #000000;
+  text-shadow: none;
+}
+
+::selection {
+  background: #000000;
+  text-shadow: none;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  color: var(--main);
+}
+
+input,
+button,
+textarea {
+  font-family: "Gilroy", sans-serif;
+}
+
+/* user css */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
