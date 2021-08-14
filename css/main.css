@@ -22,12 +22,18 @@
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: var(--main);
-  background-color: #000000;
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
 }
 
 /* user css */  
 
 .header {
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -38,11 +44,11 @@ body {
   padding: 0 159px;
 }
 
-.nav-menu {
+.header-navbar {
   position: absolute;
   top: 40px;
   right: 178px;
-  z-index: 1;
+  z-index: 3;
   font-family: 'Futura';
   font-size: 16px;
   line-height: 30px;
@@ -50,11 +56,17 @@ body {
   text-align: right;
 }
 
-.nav-wrapper {
+.navbar-wrapper {
   display: none;
 }
 
-.nav-header {
+.nav-menu {
+  position: relative;
+  right: 55px;
+  top: 22px;
+}
+
+.nav-title {
   font-family: 'Rounded Mplus 1c';
   font-weight: 500;
   font-size: 18px;
@@ -68,14 +80,54 @@ body {
 /* burger */
 
 .bg-burger {
-  position: relative;
-  z-index: 3;
+  height: 810px;
+  min-width: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.close-burger {
-  position: relative;
-  left: 230px;
+/* products-text */
+
+span {
   display: block;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.products-text {
+  max-width: 792px;
+  max-height: 155px;
+  margin-top: 60px;
+  text-align: right;
+}
+
+#products-text {
+  display: none;
+}
+
+.products-text__title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.products-text__desc {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.product-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
