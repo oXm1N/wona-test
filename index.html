@@ -37,9 +37,9 @@
   <header class="header" id="header">
     <div class="header-slider">
       <!-- Slider main container -->
-      <div class="swiper-container">
+      <div class="swiper-container swiper-header">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper slides">
+        <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <img
@@ -101,7 +101,6 @@
     </nav>
     <div class="bg-burger"></div>
   </header>
-
   <main>
     <div class="container">
       <section class="products">
@@ -115,24 +114,25 @@
           <span class="products-text__desc">וא טסקט ימד םג םימעפל ארקנה - ןיטולחל תועמשמ רסח טסקטל יוניכ אוה םוספיא םרול
             ירתא ,תועדומ ,םיניזגמ ,םינולע לש - תויבוציע תוציקסב םקוממ תויהל דעוימו - שירבי'ג</span>
         </div>
-        <button id="product-button" class="product-button" onclick="toggleText();" href="javascript:void(0);">
-          Read More
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.50001 0.200012L5.00001 3.70001L8.50001 0.200012L9.90001 0.900012L5.00001 5.80001L0.100006 0.900012L1.50001 0.200012Z" fill="#FF61E6"/>
-          </svg>
-        </button>
+        <button id="product-button" class="product-button" onclick="toggleText();" href="javascript:void(0);">Read More</button>
 
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-products">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="items">
+            <!-- Slides -->
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
     </div>
   </main>
 
-
-
-
-
-
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="js/jquery.js"></script>
 
   <!-- <script src="js/plugins.js"></script> -->
 
