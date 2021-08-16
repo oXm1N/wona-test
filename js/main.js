@@ -10,12 +10,21 @@ const firstSwiper = new Swiper('.swiper-header', {
   },
 });
 
-const secondSwiper = new Swiper('.swiper-products', {
-  centeredSlides: true,
+const secondSwiper = new Swiper('.swiper-products__container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    320: {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+    },
+    428: {
+      centeredSlides: true,
+      direction: 'horizontal',
+    },
+  }
 });
 
 // burger-menu
